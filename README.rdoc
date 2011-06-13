@@ -1,6 +1,6 @@
 = closest-fibonacci
 
-Description goes here.
+This gem will add closest_fibonacci as an instance method to Fixnum. closest_fibonacci returns the largest Fibonacci number less than the Fixnum instance value. If no such Fibonacci number exists, closest_fibonacci will return nil.
 
 == Contributing to closest-fibonacci
  

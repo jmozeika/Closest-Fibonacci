@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "closest-fibonacci"
   gem.homepage = "http://github.com/jmozeika/closest-fibonacci"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{This gem will add closest_fibonacci as an instance method to Fixnum}
+  gem.description = %Q{This gem will add closest_fibonacci as an instance method to Fixnum. closest_fibonacci returns the largest Fibonacci number less than the Fixnum instance value. If no such Fibonacci number exists, closest_fibonacci will return nil.}
   gem.email = "jmozeika@gmail.com"
   gem.authors = ["Jon Mozeika"]
   # dependencies defined in Gemfile
@@ -42,8 +42,8 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
+require 'rdoc/task'
+RDoc::Task.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
